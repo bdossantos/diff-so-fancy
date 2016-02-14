@@ -1,5 +1,5 @@
 install:
-  - ps: git clone --depth 1 https://github.com/stevemao/bats.git  C:\projects\diff-so-fancy\bats
+  - git clone --depth 1 https://github.com/stevemao/bats.git  C:\projects\diff-so-fancy\bats
 
 test_script:
-  - ps: bats/bin/bats test/*.bats
+  - bats/bin/bats test/*.bats
