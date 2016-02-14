@@ -1,2 +1,7 @@
+install:
+  - ps: git submodule update --init
+
+build: false
+
 test_script:
   - ps: bats/bin/bats test/*.bats
