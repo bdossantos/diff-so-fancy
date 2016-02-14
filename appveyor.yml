@@ -1,5 +1,2 @@
-install:
-  - ps: git clone -q --branch=master https://github.com/stevemao/bats.git C:\projects\bats 2>&1 | % { $_.ToString() }
-
 test_script:
   - ps: bats/bin/bats test/*.bats
