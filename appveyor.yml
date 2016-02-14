@@ -1,5 +1,5 @@
 install:
-  - git clone -q https://github.com/stevemao/bats.git 2> $null
+  - git clone -q https://github.com/stevemao/bats.git 2>&1 | % { $_.ToString() } C:\projects\bats
 
 test_script:
   - bats/bin/bats test/*.bats
