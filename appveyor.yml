@@ -1,5 +1,5 @@
 install:
-  - ps: git clone --depth 1 https://github.com/stevemao/bats.git
+  - ps: git clone --depth 1 https://github.com/stevemao/bats.git bats
 
 test_script:
   - ps: bats/bin/bats test/*.bats
